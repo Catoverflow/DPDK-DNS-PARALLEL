@@ -26,11 +26,11 @@ static volatile bool force_quit;
 #define RX_RING_SIZE 4096
 #define TX_RING_SIZE 4096
 
-#define NUM_MBUFS 32767
+#define NUM_MBUFS 65535
 #define MBUF_CACHE_SIZE 250
-#define BURST_SIZE 32
+#define BURST_SIZE 4
 
-#define NUM_QUEUES 4
+#define NUM_QUEUES 8
 
 static const struct rte_eth_conf port_conf_default = {
 	.rxmode = {
